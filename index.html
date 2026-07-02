@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Crochet Order Form</title>
+
+  <style>
+    .order-form {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .order-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .order-form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    .order-form input,
+    .order-form select,
+    .order-form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    .order-form button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background: #ffb6c1;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .order-form button:hover {
+      background: #ffa3b0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <form action="https://formspree.io/f/xzdljnen" method="POST" class="order-form">
+    <h2>Place Your Crochet Order</h2>
+
+    <label>Your Name:
+      <input type="text" name="name" required>
+    </label>
+
+    <label>Your Email:
+      <input type="email" name="email" required>
+    </label>
+
+    <label>Crochet Item:
+      <select name="item" required>
+        <option value="">Select an item</option>
+        <option value="plushie">Plushie</option>
+        <option value="keychain">Keychain</option
+      </select>
+    </label>
+
+    <label>Colour (optional):
+      <input type="text" name="colour" placeholder="e.g., pastel pink">
+    </label>
+
+    <label>Extra Notes:
+      <textarea name="notes" placeholder="Any custom details"></textarea>
+    </label>
+
+    <button type="submit">Submit Order</button>
+  </form>
+
+</body>
+</html>
