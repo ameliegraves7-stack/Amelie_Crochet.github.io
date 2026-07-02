@@ -59,3 +59,98 @@
       background: #ffa3b0;
     }
 
+    /* Header */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 25px;
+      background: #ffb6c1;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .nav-logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .nav-links a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+    }
+
+    .nav-links a:hover {
+      color: #000;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      background: #fff5f7;
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo">Amelie’s Crochet</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="order.html">Order</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ORDER FORM -->
+  <form action="https://formspree.io/f/xzdljnen" method="POST" class="order-form">
+    <h2>Place Your Crochet Order</h2>
+
+    <label>Your Name:
+      <input type="text" name="name" required>
+    </label>
+
+    <label>Your Email:
+      <input type="email" name="email" required>
+    </label>
+
+    <label>Crochet Item:
+      <select name="item" required>
+        <option value="">Select an item</option>
+        <option value="plushie">Plushie</option>
+        <option value="keychain">Keychain</option>
+        <option value="scrunchie">Scrunchie</option>
+        <option value="bag">Bag</option>
+        <option value="custom">Custom Request</option>
+      </select>
+    </label>
+
+    <label>Colour (optional):
+      <input type="text" name="colour" placeholder="e.g., pastel pink">
+    </label>
+
+    <label>Extra Notes:
+      <textarea name="notes" placeholder="Any custom details"></textarea>
+    </label>
+
+    <button type="submit">Submit Order</button>
+  </form>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Amelie’s Crochet — Handmade with love in NZ</p>
+  </footer>
+
+</body>
+</html>
